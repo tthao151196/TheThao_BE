@@ -19,7 +19,7 @@ php artisan view:cache   || true
 # Migrate nếu có DB, không fail toàn bộ nếu lỗi
 if [[ -n "${DB_HOST}" ]]; then
   echo "🗄️ php artisan migrate --force"
-  php artisan migrate --force || true
+ # php artisan migrate --force || true
 fi
 
 echo "🚀 apache2-foreground"
